@@ -20,6 +20,6 @@ test('Open catalog page', async t => {
 test('Click on Logo navigates to Home page', async t => {
     await t.click(catalogPage.catalogNavMenu); 
     await t.click(catalogPage.logo); 
-    await t.expect(await utils.getUrl()).contains('test');
+    await t.expect(await utils.getUrl()).contains('https://www.onliner.by/');
 
 });
