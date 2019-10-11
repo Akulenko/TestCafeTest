@@ -9,9 +9,9 @@ createTestCafe('localhost')
         return runner
             .src(['./tests/*test.js'])
             .browsers(['chrome:headless'])
-         //   .reporter('teamcity')
             /*Running all tests in separate instances*/
             .concurrency(3) 
+            .reporter('teamcity')
             .run({skipJsErrors: true,
                 selectorTimeout: 20000,
                 assertionTimeout: 20000,
