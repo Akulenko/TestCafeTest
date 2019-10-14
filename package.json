@@ -3,11 +3,11 @@
   "description": "Automated browser testing for the modern web development stack.",
   "license": "MIT",
   "version": "0.1.0",
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
     "testcafe": "^1.5.0",
-    "testcafe-reporter-html-testrail": "^3.1.3"
+    "testcafe-reporter-html-testrail": "^3.1.3",
+    "testcafe-reporter-junit": "^3.0.0"
   },
   "devDependencies": {}
 }
