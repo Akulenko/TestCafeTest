@@ -11,13 +11,13 @@ fixture `Catalog page`
         await t.maximizeWindow();
     })
 
-test('Open catalog page', async t => {
+test('Smoke | Open catalog page', async t => {
     await t.click(catalogPage.catalogNavMenu); 
     console.log(catalogPage.pageTitle);
     await t.expect(await utils.getUrl()).contains('https://catalog.onliner.by/');
 });
 
-test('Click on Logo navigates to Home page', async t => {
+test('Smoke | Click on Logo navigates to Home page | 01', async t => {
     await t.click(catalogPage.catalogNavMenu); 
     await t.click(catalogPage.logo); 
     await t.expect(await utils.getUrl()).contains('test');
