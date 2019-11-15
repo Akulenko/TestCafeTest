@@ -9,7 +9,9 @@ createTestCafe('localhost')
         return runner
             .src(['./tests/*test.js'])
             .browsers(['chrome:headless'])
-            .reporter('xunit', 'test-reports/report.xml')
+            .screenshots('reports/screenshots/', true) //path to the screenshots
+            .reporter('teamcity')
+          //  .reporter('xunit', 'test-reports/report.xml')
             /*Running all tests in separate instances*/
             .concurrency(3) 
             .run({skipJsErrors: true,
