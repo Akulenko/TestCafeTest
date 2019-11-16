@@ -11,6 +11,6 @@
   "devDependencies": {},
      
   "scripts": {
-        "test": "testcafe \"saucelabs:Chrome@beta:Windows 10\" tests/*test.js"
+        "test": "testcafe \"saucelabs:Chrome@beta:Windows 10\" tests/*test.js --skip-js-errors"
   }
 }
